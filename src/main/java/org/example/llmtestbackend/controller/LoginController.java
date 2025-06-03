@@ -15,6 +15,7 @@ public class LoginController {
     private LoginService loginService;
 
 
+    //login logic
     @PostMapping("/login")
     public String login(@RequestParam String email, @RequestParam String password) {
         boolean result = loginService.login(email, password);
